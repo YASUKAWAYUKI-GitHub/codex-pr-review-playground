@@ -12,6 +12,11 @@ jobs:
   codex_review:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Run Codex PR Review
         uses: openai/codex-action@v1
         with:
