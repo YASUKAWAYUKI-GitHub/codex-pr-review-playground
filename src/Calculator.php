@@ -13,10 +13,10 @@ class Calculator
      */
     public function divide(int|float $a, int|float $b): float
     {
-        if ($b === 0) {
+        if ($b == 0) {
             throw new InvalidArgumentException('0 で割ることはできません');
         }
 
-        return $a / $b;
+        return (int) ($a / $b);
     }
 }
