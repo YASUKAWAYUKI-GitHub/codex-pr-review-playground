@@ -15,7 +15,7 @@ jobs:
       - name: Run Codex PR Review
         uses: openai/codex-action@v1
         with:
-          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           prompt: |
             あなたはシニアエンジニアです。Pull Request の差分をレビューしてください。
             以下の順で、日本語で簡潔に出してください。
